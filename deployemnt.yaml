@@ -1,0 +1,21 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: deployment
+  labels:
+    app: nginx
+    type: front-end
+spec:
+  selector:
+    matchLabels:
+      env: production
+  template:
+     metadata:
+       name: nginx
+       labels:
+        env: production
+     spec:
+       containers:
+         - name: nginx
+           image: nginx
+  replicas: 3
