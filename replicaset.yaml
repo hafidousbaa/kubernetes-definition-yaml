@@ -19,5 +19,5 @@ spec:
     
   selector:
      matchLabels:
-       type: front-end
-    
+       env: production
+  replicas: 5
