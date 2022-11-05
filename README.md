@@ -12,9 +12,11 @@
  <!--  -->
 create a pod with command use a file yaml :  
 <!--  -->
-// Create a file yaml && the file contains all composant to create a pod nginx
+
 *kubectl run nginx --image=nginx --dry-run=client -o yaml > nginx-definition.yaml 
 <!--  -->
- 
-*kubectl create -f nginx-definition-yaml 
+ // Create a file yaml && the file contains all composant to create a pod nginx
+ <!--  -->
+*kubectl create -f nginx-definition-yaml
+ <!--  -->
 // Create a pod by filename  
