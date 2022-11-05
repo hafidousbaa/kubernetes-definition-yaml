@@ -1,9 +1,14 @@
-#Pod-definition-yaml
+#Pod-definition-yaml |
 ----------------------------------------------------------------------
+![alt](./image/pod.png)
+----------------------------------------------------------------------
+**Create a pod using file yaml : ** |
+*what's a pod ?* |
+-Pods are the smallest deployable units you can create and manage in Kubernetes. A pod is a group of one (or more) containers, utilizing shared network and storage resources. By nature, the contents of a pod are always co-scheduled and co-located, and they are run in a shared context.|
+------------------------------------------------------------------------ 
+create a pod with command use a file yaml : | 
 
-**Create a pod using file yaml :
-**
-*what's a pod ?* 
--Pods are the smallest, most basic deployable objects in Kubernetes. A Pod represents a single instance of a running process in your cluster.
-
-Pods contain one or more containers, such as Docker containers. When a Pod runs multiple containers, the containers are managed as a single entity and share the Pod's resources. Generally, running multiple containers in a single Pod is an advanced use case. 
+*kubectl run nginx --image=nginx --dry-run=client -o yaml > nginx-definition.yaml |
+<!-- Create a file yaml && the file contains all composant to create a pod nginx -->
+*kubectl create -f nginx-definition-yaml |
+<!-- Create a pod by filename  -->
