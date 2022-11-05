@@ -1,4 +1,4 @@
-#Pod-definition-yaml 
+#Pod-definition-yaml && replicatset 
 <!--  -->
 ----------------------------------------------------------------------
 ![alt](./image/pod.png)
@@ -20,3 +20,8 @@ create a pod with command use a file yaml :
 *kubectl create -f nginx-definition-yaml
  <!--  -->
 // Create a pod by filename  
+<!--  -->
+*kubectl replace -f replicaset.yaml 
+<!--  -->
+*kubectl scale --replicas=6 -f replicaset.yaml
+
