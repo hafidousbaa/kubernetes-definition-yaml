@@ -24,6 +24,7 @@ create a pod with command use a file yaml :
 *kubectl replace -f replicaset.yaml 
 <!--  -->
 //scaling with edit the file replicaset.yaml and execute the command to apply the change 
+<!--  -->
 *kubectl scale --replicas=6 -f replicaset.yaml
 <!--  -->
 //instead of modified the yaml file we can scale using this command, Notice that the file yaml doesn't modified  
