@@ -1,5 +1,5 @@
-#Pod-definition-yaml && replicatset && deployemnt
-<!--  -->
+#Pod-definition-yaml  && replicatset  &&recreate  && rollingupdate && deployemnt
+ <!--  -->
 ----------------------------------------------------------------------
 ![alt](./image/pod.png)
 ----------------------------------------------------------------------
@@ -7,10 +7,37 @@
 <!--  -->
 *what's a pod ?* 
 <!-- | -->
-**Pods are the smallest deployable units you can create and manage in Kubernetes. A pod is a group of one (or more) containers, utilizing shared network and storage resources. By nature, the contents of a pod are always co-scheduled and co-located, and they are run in a shared context.**
+```
+Pods are the smallest deployable units you can create and manage in Kubernetes. A pod is a group of one (or more) containers, utilizing shared network and storage resources. By nature, the contents of a pod are always co-scheduled and co-located, and they are run in a shared context.
+```
 ------------------------------------------------------------------------
  <!--  -->
+ ```
+what's *replicatset* : the mot describe itself, create a replicat set, we use a selector to watch the state of pods if there's a pod down a new pod with the same specifies will create automatically.
+ ```
 
+ <!--  -->
+ ```
+what's *recreate* : remove all the pods , and update the new image and running them again (new version).
+<!--  -->
+all the pods in the same time.
+ ```
+ <!--  -->
+
+
+ <!--  -->
+ ```
+what's *rollingUpdate* : remplace pod one after one ,   
+<!--  -->
+
+ ```
+ <!--  -->
+
+
+
+
+
+ <!--  -->
 create a pod with command use a file yaml :  
 <!--  -->
 
