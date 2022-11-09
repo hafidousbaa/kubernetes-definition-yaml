@@ -8,12 +8,17 @@
 *what's a pod ?* 
 <!-- | -->
 ```
-Pods are the smallest deployable units you can create and manage in Kubernetes. A pod is a group of one (or more) containers, utilizing shared network and storage resources. By nature, the contents of a pod are always co-scheduled and co-located, and they are run in a shared context.
+Pods are the smallest deployable units you can create and manage in Kubernetes. 
+A pod is a group of one (or more) containers, utilizing shared network and storage resources. 
+By nature, the contents of a pod are always co-scheduled and co-located,
+ and they are run in a shared context.
 ```
 ------------------------------------------------------------------------
  <!--  -->
  ```
-what's *replicatset* : the mot describe itself, create a replicat set, we use a selector to watch the state of pods if there's a pod down a new pod with the same specifies will create automatically.
+what's *replicatset* : the mot describe itself, create a replicat set, 
+we use a selector to watch the state of pods 
+if there's a pod down a new pod with the same specifies will create automatically.
  ```
 
  <!--  -->
