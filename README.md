@@ -19,7 +19,7 @@ what's *replicatset* : the mot describe itself, create a replicat set, we use a 
  <!--  -->
  ```
 what's *recreate* : remove all the pods , and update the new image and running them again (new version).
-<!--  -->
+
 all the pods in the same time.
  ```
  <!--  -->
@@ -28,7 +28,7 @@ all the pods in the same time.
  <!--  -->
  ```
 what's *rollingUpdate* : remplace pod one after one ,   
-<!--  -->
+
 
  ```
  <!--  -->
