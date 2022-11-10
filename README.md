@@ -1,11 +1,13 @@
-#Pod-definition-yaml  && replicatset  &&recreate  && rollingupdate && deployemnt
+# Pod-definition-yaml  && replicatset  &&recreate  && rollingupdate && deployemnt && Service
  <!--  -->
 ----------------------------------------------------------------------
+
 ![alt](./image/pod.png)
 ----------------------------------------------------------------------
-**Create a pod using file yaml:** 
+
+**Create a pod using file yaml:**
 <!--  -->
-*what's a pod ?* 
+*what's a pod ?*
 <!-- | -->
 ```
 Pods are the smallest deployable units you can create and manage in Kubernetes. 
@@ -13,6 +15,7 @@ A pod is a group of one (or more) containers, utilizing shared network and stora
 By nature, the contents of a pod are always co-scheduled and co-located,
  and they are run in a shared context.
 ```
+
 ------------------------------------------------------------------------
  <!--  -->
  ```
@@ -29,7 +32,6 @@ all the pods in the same time.
  ```
  <!--  -->
 
-
  <!--  -->
  ```
 what's *rollingUpdate* : remplace pod one after one ,   
@@ -37,10 +39,10 @@ what's *rollingUpdate* : remplace pod one after one ,
 
  ```
  <!--  -->
-
-
-
-
+* Service :
+  * NodePort
+  * ClusterIP
+  * Load Balaner
 
  <!--  -->
 create a pod with command use a file yaml :  
@@ -54,9 +56,9 @@ create a pod with command use a file yaml :
  <!--  -->
 // Create a pod by filename  
 <!--  -->
-`kubectl replace -f replicaset.yaml` 
+`kubectl replace -f replicaset.yaml`
 <!--  -->
-//scaling with edit the file replicaset.yaml and execute the command to apply the change 
+//scaling with edit the file replicaset.yaml and execute the command to apply the change
 <!--  -->
 `kubectl scale --replicas=6 -f replicaset.yaml`
 <!--  -->
