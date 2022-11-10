@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: back-end
+spec:
+  type: LoadBalancer
+  ports:
+    - targetPort: 80
+      port: 80
+
+  selector:
+    app: myapp-pod
+    type: back-end
+    
