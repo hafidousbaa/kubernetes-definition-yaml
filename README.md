@@ -42,7 +42,7 @@ what's *rollingUpdate* : remplace pod one after one ,
 * Service :
   * NodePort
   * ClusterIP
-  * Load Balaner
+  * Load Balaner **work only with CLOUD (aws,azure,gcp)**
 
  <!--  -->
 create a pod with command use a file yaml :  
