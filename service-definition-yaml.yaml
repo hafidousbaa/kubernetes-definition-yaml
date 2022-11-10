@@ -8,7 +8,8 @@ spec:
     - targetPort: 80
       port: 80
       nodePort: 30005
+      protocol: TCP
   selector:
     app: myapp-pod
-    tier: front-end
-     
+    type: front-end
+    
